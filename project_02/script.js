@@ -1,24 +1,27 @@
-const inputBox = document.getElementById('input-box')
+const inputBox = document.getElementById('input-box');
 
-const ListContainer = document.getElementById('list-container')
+const ListContainer = document.getElementById('list-container');
 
 function addTask()
 {
     if(inputBox.value === "")
     {
-        alert("You need to write something.")
+        alert("You need to write something.");
     }
 
     else{
-        let li = document.createElement("li")
+        const li = document.createElement("li")
         li.innerHTML = inputBox.value
         ListContainer.appendChild(li)
-        let span = document.createElement("span")
+        const span = document.createElement("span")
         span.innerHTML = "\u00d7"; // code for crossing icon
-        li.appendChild(span)
+        li.appendChild(span);
+        
     }
-    inputBox.value = ""
     saveData()
+
+    inputBox.value = "";
+    
 }
 
 ListContainer.addEventListener("click",function(e){
@@ -35,12 +38,12 @@ ListContainer.addEventListener("click",function(e){
 },false)
 
 function saveData(){
-    localStorage.setItem("data", ListContainer.innerHTML)
+    localStorage.setItem("tasks", ListContainer.innerHTML)
 }
 
 function showTask()
 {
-    ListContainer.innerHTML = localStorage.getItem("data")
+    ListContainer.innerHTML = localStorage.getItem("tasks")
 }
 
-showTask()
+showTask();
