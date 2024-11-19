@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/29fe9cd369.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        
+        <div class="music-player">
+            <nav>
+                <!-- <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div> -->
+                <!-- <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div> -->
+            </nav>
+            <img src="images/468-thumbnail.png" class="song-img">
+            <h1 id="song_name">Birsiney hou ki-cover</h1>
+            <p id="name">Rajesh Thapa ft. Pratyoos Panta</p>
+
+            <audio id="song">
+                <source src="media/song1.mp4">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div onclick="changeSongBack()"><i class="fa-solid fa-backward" id="nxtButton"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div> 
+                <div onclick="changeSongFront()"><i class="fa-solid fa-forward" id="nextButton"></i></div>
+                
+                <!-- <button id="">Next</button> -->
+            </div>
+        </div>
     </div>
 
 
