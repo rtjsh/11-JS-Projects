@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.hero{
+.Hero{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(45deg, #010758, #490d61);
@@ -46,7 +46,7 @@ textarea::placeholder{
     color: #ddd;
 }
 
-.row{
+.Row{
     width: 600px;
     display: flex;
     align-items: center;

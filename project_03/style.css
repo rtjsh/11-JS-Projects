@@ -9,7 +9,7 @@ body{
     background: #001e4d;
 }
 
-.app{
+.App{
     background: #fff;
     width: 90%;
     max-width: 600px;
@@ -19,7 +19,7 @@ body{
 
 }
 
-.app h1{
+.App h1{
     font-size: 25px;
     color: #001e4d;
     font-weight: 600;
