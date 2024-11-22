@@ -1,3 +1,14 @@
+Positions in CSS:
+Static (default): Elements follow the normal document flow (no positioning applied).
+
+Relative: Positioned relative to its original position in the flow. Offset with top, right, bottom, left, but the original space remains reserved.
+
+Absolute: Removed from the flow and positioned relative to the nearest ancestor[an ancestor with position: relative, absolute, or fixed] . If none, it’s relative to the <html>.
+
+Fixed: Similar to absolute, but always positioned relative to the viewport and doesn’t move when scrolling.
+
+Sticky: Acts like relative until a scroll threshold is reached, then sticks like fixed. Requires top, right, bottom, or left.
+
 
 
 Project 01
@@ -241,5 +252,33 @@ background-position-x: calc(100% - 20px);
 
 100%: Refers to the far-right edge of the element (the full width of the container).
 - 20px: Moves the background 20px to the left from the far-right edge.
+
+
+Project 9
+
+JS
+
+(/^[A-Za-z]*\s{1}[A-Za-a]*&/)
+
+Meaning of Corrected Regex:
+
+Matches a string that:
+/^ -> Matches the start of the string.
+Starts with zero or more alphabetic characters ([A-Za-z]*).
+Has exactly one space (\s{1}).
+Follows with zero or more alphabetic characters ([A-Za-z]*).
+$ -> Matches the end of the string.
+Examples of Matched Strings:
+"Hello World"
+"A B"
+"Name "
+Examples of Non-Matched Strings:
+"Hello" (no space)
+"Hello World" (more than one space)
+"Hello123 World" (contains non-alphabetic characters)
+Let me know if you have specific input you'd like to test against this regex! 😊
+
+
+Use single quote inside double quote.
 
 Nice keep going!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
