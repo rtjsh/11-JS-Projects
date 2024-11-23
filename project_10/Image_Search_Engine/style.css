@@ -4,3 +4,92 @@
     font-family: 'Poppins' ,sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    background: #39297b;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    margin: 100px auto 50px;
+
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button{
+    padding:  0 40px;
+    height: 100%;
+    background: #ff3929;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 18px;
+}
+
+#show-more-btn{
+    background: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* width: 80%;
+The width of the container is set to 80% of its parent element's width.
+
+margin: 100px auto 50px;
+
+The top margin is 100px.
+The left and right margins are set to auto, which centers the container horizontally.
+The bottom margin is 50px.
+display: grid;
+The container is styled as a grid, which allows for easy and flexible layout management.
+
+grid-template-columns: 1fr 1fr 1fr;
+This defines a grid with three equal-width columns (1fr each, where fr is a fractional unit).
+
+grid-gap: 40px;
+The spacing (gap) between the rows and columns of the grid is set to 40px. */
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}

@@ -281,4 +281,33 @@ Let me know if you have specific input you'd like to test against this regex! ðŸ
 
 Use single quote inside double quote.
 
+Project 10
+
+Code:
+searchForm.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    page = 1;
+    searchImages();
+})
+
+searchForm.addEventListener("submit", ... ):
+This sets up an event listener for the "submit" event on the searchForm. When the form is submitted, the function provided as the second argument will execute.
+
+(e) => { ... }:
+The listener uses an arrow function, where e is the event object that represents the "submit" event.
+
+e.preventDefault();:
+Prevents the default behavior of the form submission. Typically, submitting a form triggers a page reload or navigation to the form's action URL. By calling preventDefault(), this default behavior is stopped, allowing you to handle the submission with custom logic.
+
+page = 1;:
+This sets the variable page to 1. Presumably, this is used for tracking pagination for a list of search results.
+
+searchImages();:
+This calls a function named searchImages, which is likely responsible for fetching and displaying images based on the user's input.
+
+Purpose
+The code is likely part of a web application where users can search for images. Instead of the form performing a traditional HTTP request, this approach allows the search to happen dynamically (probably through AJAX or a similar technique), enhancing user experience by not requiring a full page reload.
+
+
+
 Nice keep going!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
