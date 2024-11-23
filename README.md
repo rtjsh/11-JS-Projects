@@ -308,6 +308,15 @@ This calls a function named searchImages, which is likely responsible for fetchi
 Purpose
 The code is likely part of a web application where users can search for images. Instead of the form performing a traditional HTTP request, this approach allows the search to happen dynamically (probably through AJAX or a similar technique), enhancing user experience by not requiring a full page reload.
 
+Project 11
+
+JS 
+
+Code:
+document.body.classList.toggle("dark-theme"):
+
+This adds or removes the dark-theme class from the <body> element. This dynamically changes the theme by utilizing the CSS rules defined for .dark-theme.
+
 
 
 Nice keep going!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
