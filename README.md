@@ -308,6 +308,37 @@ This calls a function named searchImages, which is likely responsible for fetchi
 Purpose
 The code is likely part of a web application where users can search for images. Instead of the form performing a traditional HTTP request, this approach allows the search to happen dynamically (probably through AJAX or a similar technique), enhancing user experience by not requiring a full page reload.
 
+Code:
+ if(page == 1)
+  {
+    searchResult.innerHTML ="";
+  }
+
+When you perform a search on an image gallery or any paginated results page, you'll want to clear out the previous search results before showing new results, especially when the user submits a new search query. Doing this clears the previous searches while initiating a new search.
+
+Code:
+  const results = data.results;
+  results.map((result) => {
+    const image = document.createElement("img");
+    image.src = result.urls.small;
+
+Loops through the search results and creates an img element for each image result. The image URL is retrieved from result.urls.small, which provides a small version of the image.
+
+
+Code:
+    const imageLink = document.createElement("a");
+    imageLink.href = result.links.html;
+    imageLink.target = "_blank"; // Opens the image in a new tab
+
+    imageLink.appendChild(image);
+    searchResult.appendChild(imageLink);
+  })
+
+
+
+For each image, an anchor (<a>) tag is created. The anchor links to the full-size image page on Unsplash. The image element is appended to the link (<a>) element, which is then appended to the searchResult container.
+
+
 Project 11
 
 JS 
