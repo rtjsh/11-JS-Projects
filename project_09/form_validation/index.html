@@ -8,33 +8,33 @@
 </head>
 <body>
   <div class="container">
-    <form>
+    <form action="connect.php" method="POST" onclick="return validateForm()">
       <i class="fa-brands fa-telegram"></i>
 
       <div class="input-group">
         <label>Full Name</label>
-        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()" name="Name">
         <span id="name-error"></span>
       </div>
 
       <div class="input-group">
         <label>Phone No.</label>
-        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()"><span id="phone-error"></span>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()" name="Phone"><span id="phone-error"></span>
       </div>
 
       <div class="input-group">
         <label>Email Id</label>
-        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()" name="Email">
         <span id="email-error"></span>
       </div>   
 
       <div class="input-group">
         <label>Your Message</label>
-        <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+        <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"  name="Message"></textarea>
         <span id="message-error"></span>
       </div>
 
-    <button onclick="return validateForm()">Submit</button>
+    <button type="submit">Submit</button>
     <span id="submit-error"></span>
    
   </form>
